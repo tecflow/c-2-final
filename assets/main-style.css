@@ -1,0 +1,1521 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* -----------------------------header----------------------------- */
+
+.site-header>div{
+    max-width: 1688px;
+    height: 1420px;
+    padding: 32px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.site-header>div>div:first-child{
+    height: 60px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 136px;
+}
+
+.main-navigation{
+    width: 382px;
+    height: 27px;
+}
+
+.menu-header-container  ul{
+    display: flex;
+    width: 382px;
+    gap: 70px;
+    flex-direction: row;
+    font-weight: 600px;
+    font-size: 20px;
+    line-height: 27.24px;
+}
+
+.menu-header-container ul li a{
+    color: white;
+    font-weight: 600px;
+    font-size: 20px;
+    line-height: 27.24px;
+}
+
+.header-images{
+    display: flex;
+    align-items: center;
+}
+
+.header-images>img{
+    width: 36px;
+    height: 36px;
+    margin-right: 34px;
+}
+
+.header-images>a>img{
+    width: 48px;
+    height: 48px;
+}
+
+.hamburer-menu{
+    cursor: pointer;
+}
+
+.sidebar-nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 400px;
+    background-color: rgba(46, 139, 86, 0.655);
+    height: 100%;
+    left: -400px;
+    transition: all 300ms ease;
+}
+
+#menu:checked ~ .sidebar-nav{
+    left: 0px;
+}
+
+[type="checkbox"], [type="radio"] {
+    display: none;
+}
+
+
+#primary-menu-mobile{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+}
+
+#primary-menu-mobile a{
+    text-decoration: none;
+}
+
+.hamburger-menu-icon{
+    font-size: 35px;
+    color: white;
+    display: none;
+    position: absolute;
+}
+
+/* -----------------------------welcome section----------------------------- */
+
+.hello-parts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 375px !important;
+    text-align: center;
+    align-items: center;
+}
+
+.hello-parts h1{
+    font-weight: 800;
+    font-size: 75px;
+    line-height: 102.14px;
+    color: white;
+    margin: 0 0 57px 0;
+}
+
+.hello-parts p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.79px;
+    color: white;
+    margin: 0 0 52px 0;
+}
+
+.hello-parts>a{
+    width: 214px;
+    background-color: #00A651;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 600px;
+    line-height: 60px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* -----------------------------our services----------------------------- */
+
+.home-section-2 {
+    background-color: #ffffff;
+}
+
+.container-for-service {
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: 88px;
+}
+
+.secondary-title {
+    font-family: Open Sans;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54.47px;
+    margin-bottom: 63px;
+    margin-top: 0;
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+    gap: 95px;
+}
+
+.service-card,
+.service-card-2 {
+    background-color: #F9F9F9;
+    border-radius: 15px;
+    padding: 35px 50px 20px 35px;
+    width: 416px;
+    min-height: 232px; 
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+
+.service>.service-card:nth-child(even) {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 16px 0px #00000026;
+}
+
+.service-card:hover,
+.service-card-2:hover {
+    transform: translateY(-5px);
+}
+
+.service-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 19px;
+    flex-grow: 1;
+}
+
+.service-card-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32.68px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.service-card-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.79px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.service-card-img {
+    width: 45px;
+    height: 45px;
+}
+
+.service-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* -----------------------------best services----------------------------- */
+
+.best-service{
+    width: 100%;
+    background-color: #0058530D;
+    height: 733px;
+}
+
+.best-service-parts{
+    width: 1408px;
+    height: 533px;
+    margin: 0 auto 113px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.best-service-parts>img{
+    position: absolute;
+    z-index: -10;
+    width: 1184px;
+    height: 622px;
+    margin-top: 59px;
+}
+
+.best-service-text{
+    width: 518px;
+}
+
+.best-service-text h2{
+    font-weight: 700;
+    size: 40px;
+    line-height: 54.47px;
+    text-align: center;
+    margin: 22px 0 19px;
+}
+
+.best-service-text p{
+    font-weight: 400;
+    size: 16px;
+    line-height: 21.79px;
+    text-align: center;
+    margin-bottom: 118px;
+}
+
+.service-cards{
+    display: flex;
+    gap: 136px;
+}
+
+.cards-insides{
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards-insides img{
+    width: 42px;
+    height: 42px;
+    margin: 42px 0 32px;
+}
+
+.cards-insides div{
+    width: 91px;
+    text-align: center;
+}
+
+.numbers{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 49.03px;
+    color: black;
+    margin: 0;
+}
+
+.nub-descriptions{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27.24px;
+    color: black;
+    margin: 10px 0;
+}
+
+
+/* -----------------------------popular destionations----------------------------- */
+
+.popular-destionations{
+    overflow: hidden;
+}
+
+.popular-destionation-parts{
+    position: relative;
+    width: 1728;
+    height: 1004;
+    margin: auto;
+    text-align: center;
+}
+
+.popular-destionation-parts h2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54.47px;
+    margin: 72px;
+}
+
+.popular-destionation-parts>img{
+    position: absolute;
+    top: 189px;
+    left: -667px;
+    width: 1390px;
+    height: 772px;
+}
+
+.popular-destionation-parts-cards-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 42px;
+}
+
+.popular-destionation-parts-cards{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 659px;
+    height: 223px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px 0px #00000014;  
+    margin-right: 166px; 
+    background-color: white; 
+}
+
+.popular-destionation-parts-cards>img{
+    width: 223px;
+    height: 223px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;   
+}
+
+.popular-destionation-parts-cards div{
+    width: 95px;
+    text-align: center;
+    position: absolute;
+    top: 83px;
+    right: 161px;
+    
+}
+
+.destination-text{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27.24px;
+    margin: 49px;
+}
+
+.spot-text{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27.24px;
+    margin: 0;
+}
+
+.popular-destionation-parts-cards>a>img{
+    position: absolute;
+    top: 95px;
+    right: 35px;
+}
+
+.dots1, .dots2, .dots3{ 
+    border: solid 1px #646464;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;    
+}
+
+.dots1>div, .dots2>div, .dots3>div{
+    width: 12px;
+    height: 12px;
+    background-color: #4992FF;
+    border-radius: 50%;
+}
+
+/*-----------------------------Positioning each dot----------------------------- */
+.dots1 {
+    top: 863px;
+    left: 655px;
+}
+
+.dots2{
+    top: 672px !important;
+    left: 455px !important;
+}
+
+.dots3 {
+    top: 575px;
+    left: 351px;
+}
+
+/* -----------------------------packages----------------------------- */
+
+.mainwp-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #ECF1F0;
+    height: 1119px;
+}
+
+
+
+.best-packages-for-you {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.best-packages-for-you h2{
+    margin: 59px 0px 52px ;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 54.47px;
+}
+
+.packages-buttons{
+    margin: 0 auto 107px;
+    display: flex;
+    gap: 74px
+
+}
+
+.packages-buttons button{
+    width: 180px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #666666;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27.24px;
+    color: #FFFFFF;
+    transition: ease;
+    transition: background-color 0.3s ease;
+}
+
+.packages-buttons button:hover{
+    background-color: #00A651;
+}
+
+.tour-cards{
+    display: flex;
+    gap: 74px;
+    margin-bottom: 98px;
+    transition: all 300s ease;
+}
+
+.best-packages-for-you button:hover{
+    background-color: #00A651;
+}
+
+.best-packages-for-you button{
+    width: 180px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #666666;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27.24px;
+    color: #FFFFFF;
+    transition: ease;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+.tour-card{
+    position: relative;
+    width: 434px;
+    height: 514px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.tour-card-info{
+    position: absolute;
+    width: 434px;
+    height: 176px;
+    bottom: 0;
+    z-index: 10;
+    background-color: white;
+    padding: 13px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.tour-card-info p{
+    margin: 0 0 33px;
+}
+
+.time-price{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    height: 27px;
+}
+
+.countries-more{
+    display: flex;
+    justify-content: space-between;
+}
+
+.countries-more>div{
+    display: flex;
+}
+
+.countries-more>div img{
+    height: 20px;
+    width: 20px;
+}
+
+.time-price p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27.24px;
+    color: black;
+}
+
+.tour-card-info p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.79px;
+    color: black;
+}
+
+.countries-more p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.79px;
+    color: black;
+}
+
+.countries-more>div p{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27.24px;
+    color: black;
+}
+
+
+
+/* -----------------------------book your next trip----------------------------- */
+
+
+.book-your-next-trip{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 720px;
+}
+
+.properties-outer{
+    display: flex;
+}
+
+.propertis{
+    width: 1751px;
+    text-align: center;
+}
+
+.propertis h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 54.47px;
+}
+
+.propertis p{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.68px;
+    margin-bottom: 62px;
+}
+
+.to-do-list{
+    margin-top: 15px;
+}
+
+.to-do{
+    display: flex;
+    margin-left: 290px;
+    margin-bottom: 72px;
+    margin-right: 90px;
+    width: 400px;
+}
+
+.to-do img{
+    height: 66.5924072265625px;
+    width: 65.20506286621094px;
+    margin-right: 29.13px;
+}
+
+.to-do-text{
+    text-align: start;
+}
+
+.to-do-text p:first-child{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.92px;
+    color: #5E6282;
+    margin: 0 0 11px 0;
+}
+
+.to-do-text p:nth-child(2){
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.92px;
+    color: #5E6282;
+    margin: 0;
+}
+
+/* -----------------------------what pople say----------------------------- */
+
+.what-people-say{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ECF1F0;
+    text-align: center;
+    margin-bottom: 96px;
+    overflow: hidden;
+    min-height: 835px; /* Allows it to expand if needed */
+    height: auto;
+}
+
+.what-people-say h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 54.47px;
+    color: #000000;
+    margin: 62px 0 59px 0;
+}
+
+.iamges-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.iamges-3 img{
+    border-radius: 20px;
+}
+
+.iamges-3 img:nth-child(2){
+    margin: 0 125px;
+    width: 1228px;
+    height: 536px;
+}
+
+.iamges-3 img:first-child, img:nth-child(3){
+    width: 825px;
+    height: 446px;
+    opacity: 37%;
+}
+
+.people{
+    position: absolute;
+    top: 522px;
+    height: 250px;
+    width: 738px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 59px 9px rgba(0, 0, 0, 0.05);
+}
+
+.people img{
+    position: absolute;
+    top: -83px;
+}
+
+.he-says{
+    width: 541px;
+}
+
+.he-says>p{
+    margin: 81px 0 24px 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.saxeli-gvari{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    margin: 0;
+}
+
+/* -----------------------------subscribe----------------------------- */
+.subscribe{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub{
+    position: relative;
+    width: 1170px;
+    height: 407px;
+    background-color: #9fffec45;
+    border-radius:129px 20px  20px 20px;
+}
+
+.telegram{
+    position: absolute;
+    right: -13px;
+    top: -20px;
+}
+
+.dots{
+    position: absolute;
+    right: -99px;
+    bottom: -70px;
+}
+
+.top-cycles{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.bottom-cycles{
+    position: absolute;
+    left: -15%;
+    bottom: 0;
+}
+
+.input-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-container>div{
+    width: 819px;
+    text-align: center;
+}
+
+.input-container>div>p{
+    font-size: 33px;
+    font-weight: 500;
+    line-height: 54px;
+    color: #5E6282;
+    margin-bottom: 74px;
+}
+
+.subscribe-field{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 625px !important; 
+}
+
+.subscribe-field input{
+    width: 421px;
+    height: 68px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    color: #39425D;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.07px;
+    cursor: text !important;
+    z-index: 1;
+    padding: 25px 0 25px 66px;
+}
+
+.subscribe-field button{
+    width: 180px;
+    height: 68px;
+    border: none;
+    background-color: #00A651;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 23.15px;
+    cursor: pointer;
+}
+
+.subscribe-field img{
+    position: absolute;
+    z-index: 2;
+    top: 25px;
+    left: 31px;
+}
+
+.subscribe{
+    margin-bottom: 170.52px;
+}
+
+/* -----------------------------footer----------------------------- */
+
+.footer-section{
+    position: relative;
+    margin: auto;
+    height: 20px;
+    width: 1490px;
+    height: 215px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 118px;
+}
+
+.logo-blabla{
+    display: flex;
+    flex-direction: column;
+    height: 125px;
+    width: 230px;
+}
+
+.logo-blabla img{
+    width: 97px;
+    height: 77px;
+    margin-left: 41px;
+    margin-bottom: 16px;
+}
+
+.footer-menu{
+    display: flex;
+    gap: 127px;
+}
+
+.footer-menu-insides{
+    margin: 0;
+    text-align: start;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-menu-insides p{
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26.15px;
+}
+
+.menu li a{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26.15px;
+    color: #5E6282;
+}
+
+.socials{
+    display: flex;
+    gap: 35px;
+}
+
+.socials div{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.socials div:hover{
+    background: conic-gradient(from 180deg at 50% 50%, #B8D2F1 0deg, #F289AA 60deg, #C68BF0 106.09deg, #D164DA 153.75deg, #C963E8 221.25deg, #BFC2E8 258.75deg, #FFC999 288.75deg, #D0D8C9 315deg, #BAD0F1 334.13deg, #CED8CB 358.97deg, rgba(255, 255, 255, 0) 360deg);
+}
+
+.app-socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.app-socials p{
+    line-height: 24.9px;
+    color: #5E6282;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.finish{
+    line-height: 17.43px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #5E6282;
+    margin: 65px;
+    text-align: center;
+}
+
+
+/* General styling for all menus */
+.ft-menu1 ul, .ft-menu2 ul, .ft-menu3 ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Align items horizontally */
+    gap: 15px; /* Space between menu items */
+}
+
+/* Styling for menu items */
+.ft-menu1 a, .ft-menu2 a, .ft-menu3 a {
+    text-decoration: none; /* Remove underline */
+    color: rgb(35, 7, 7); /* Change link color */
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.ft-menu1 a:hover, .ft-menu2 a:hover, .ft-menu3 a:hover {
+    color: #ffcc00; 
+}
+
+/* ----------------------------- link pages ----------------------------- */
+
+.body{
+    height: 100%;
+}
+
+
+.subscribe-page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-page>h1{
+    font-size: 80px;
+    color: #646464;
+    font-weight: 700;
+    line-height: 100px;
+}
+
+.subscribe-page>a{
+    height: 80px;
+    width: 200px;
+    background-color: #00A651;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.footers-pages{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footers-pages>h1{
+    font-size: 80px;
+    color: #646464;
+    font-weight: 700;
+    line-height: 100px;
+}
+
+.footers-pages>a{
+    height: 80px;
+    width: 200px;
+    background-color: #00A651;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+
+
+/* ----------------------------------------responsive-------------------------------------- */
+
+@media screen and (max-width: 1023px){
+
+    .service{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .container-for-service{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .best-service-parts>img{
+        width: 60%;
+        height: 30%;
+        margin-top: 150px;
+    }
+    /* ------------------------------------ */
+
+    .best-service-parts{
+        width: 100%;
+    }
+    .service-cards{
+        gap: 50px;
+    }
+
+    .best-service{
+        height: 550px;
+    }
+
+    .cards-insides{
+        width: 120px;
+        height: 120px;
+        gap: 50px;
+        margin: auto;
+        gap: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cards-insides img{
+        margin: 0;
+        height: 35px;
+        width: 35px;
+    }
+
+    .numbers{
+        font-size: 22px;
+    }
+
+    .nub-descriptions{
+        font-size: 13px;
+        margin: 0;
+        line-height: 15px;
+    }
+
+    /* ------------------------------------ */
+
+    .popular-destionation-parts{
+        width: 100%;
+    }
+
+    .popular-destionation-parts>img{
+        left: -50px;
+    }
+
+    .popular-destionation-parts>img{
+        top: 300px;
+        width: 1000px;
+        height: 600px;
+    }
+
+    /* ------------------------------------ */
+
+    .properties-outer{
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    .book-your-next-trip{
+        height: 1350px;
+    }
+
+    /* ------------------------------------ */
+
+    .iamges-3 img:first-child, .iamges-3 img:nth-child(2), img:nth-child(3){
+        height: 70%;
+        width: 70%;
+    }
+
+    .people{
+        width: 600px;
+    }
+
+    /* ------------------------------------ */
+
+    .sub{
+        width: 70%;
+    }
+
+    .input-container>div{
+        width: 500px;
+    }
+
+    .input-container>div>p{
+        font-size: 25px;
+    }
+
+    /* ------------------------------------ */
+
+    .footer-section{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+        height: 100%;
+        width: 500px;
+    }
+
+    /* ------------------------------------ */
+
+    .site-header>div>div:first-child{
+        width: 100%;
+        
+    }
+
+    .main-navigation{
+        display: none;
+    }
+
+    .header-images{
+        display: none;
+    }
+
+    .hello-parts{
+        width: 100%;
+        align-items: center;
+    }
+    
+    .hamburger-menu-icon{
+        display: block;
+        top: 5%;
+        right: 10%;
+    }
+    
+    .hello-parts h1{
+        font-size: 60px;
+    }
+    
+    .hamburger-menu-icon{
+        display: block;
+    }
+
+    /* ------------------------------------ */
+    
+    .packages-buttons{
+        width: 600px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .tour-cards{
+        flex-direction: column;
+    }
+
+    .mainwp-container {
+    height: 2500px;
+    }
+
+    .popular-destionation-parts-cards-container{
+        align-items: center;
+    }
+
+    .popular-destionation-parts-cards{
+        margin: 0;
+    }
+
+    .to-do{
+        margin: 0 0 72px;
+    }
+
+    .to-do-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sub {
+        width: 90%; /* Full width */
+    }
+
+    .input-container>div {
+        width: 90%; /* Full width */
+    }
+
+    .input-container>div>p {
+        font-size: 20px; /* Smaller font size */
+    }
+
+    .subscribe-field {
+        width: 90% !important; /* Full width */
+        flex-direction: column; /* Stack input and button vertically */
+        gap: 10px; /* Add gap between elements */
+    }
+
+    .subscribe-field input {
+        width: 100%; /* Full width */
+    }
+
+    .subscribe-field button {
+        width: 100%; /* Full width */
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /* ----------------------------- General Adjustments ----------------------------- */
+    .service {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .container-for-service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* ----------------------------- Best Service Section ----------------------------- */
+    .best-service-parts>img {
+        width: 80%; 
+        height: auto; 
+        margin-top: 100px; 
+    }
+
+    .best-service-parts {
+        width: 100%;
+    }
+
+    .service-cards {
+        gap: 20px; 
+        flex-wrap: wrap;
+    }
+
+    .best-service {
+        height: auto; 
+        padding: 20px 0; 
+    }
+
+    .cards-insides {
+        width: 100px; /* Smaller cards */
+        height: 100px;
+        gap: 10px; /* Reduce gap */
+        margin: 10px; /* Add margin for spacing */
+    }
+
+    .cards-insides img {
+        height: 25px; /* Smaller icons */
+        width: 25px;
+    }
+
+    .numbers {
+        font-size: 18px; /* Smaller font size */
+    }
+
+    .nub-descriptions {
+        font-size: 12px; /* Smaller font size */
+        line-height: 14px; /* Adjust line height */
+    }
+
+    /* ----------------------------- Popular Destinations Section ----------------------------- */
+    .popular-destionation-parts {
+        width: 100%;
+    }
+
+    .popular-destionation-parts>img {
+        left: -30px; 
+        top: 400px; 
+        width: 1200px; 
+        height: auto; 
+    }
+
+    .popular-destionation-parts-cards-container {
+        align-items: center;
+    }
+
+    .popular-destionation-parts-cards {
+        width: 98%; 
+    }
+
+    /* ----------------------------- Book Your Next Trip Section ----------------------------- */
+    .properties-outer {
+        flex-direction: column;
+        height: auto; 
+    }
+
+    .book-your-next-trip {
+        height: auto; 
+        padding: 20px 0;
+    }
+
+    .to-do-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .to-do {
+        margin: 20px 0; 
+        width: 90%;
+    }
+
+    /* ----------------------------- What People Say Section ----------------------------- */
+  
+    .people {
+        width: 90%; 
+        top: 400px; 
+    }
+
+    .he-says {
+        width: 90%; 
+    }
+
+    /* ----------------------------- Subscribe Section ----------------------------- */
+    .sub {
+        width: 90%; 
+    }
+
+    .input-container>div {
+        width: 90%; 
+    }
+
+    .input-container>div>p {
+        font-size: 20px; 
+    }
+
+    .subscribe-field {
+        width: 90% !important; 
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .subscribe-field input {
+        width: 100%; 
+    }
+
+    .subscribe-field button {
+        width: 100%; 
+    }
+
+    /* ----------------------------- Footer Section ----------------------------- */
+    .footer-section {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px; 
+        height: auto; 
+    }
+
+    .footer-menu {
+        flex-direction: column; 
+        gap: 20px; 
+    }
+
+    .socials {
+        justify-content: center; 
+    }
+
+    /* ----------------------------- Header Section ----------------------------- */
+    .site-header>div>div:first-child {
+        width: 100%;
+    }
+
+    .main-navigation {
+        display: none; 
+    }
+
+    .header-images {
+        display: none; 
+    }
+
+    .hello-parts {
+        width: 100%;
+        align-items: center;
+    }
+
+    .hello-parts h1 {
+        font-size: 40px; 
+    }
+
+    .hamburger-menu-icon {
+        display: block; 
+        top: 5%;
+        right: 10%;
+    }
+
+    /* ----------------------------- Packages Section ----------------------------- */
+    .packages-buttons {
+        width: 90%; 
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+
+    .tour-cards {
+        flex-direction: column; 
+    }
+
+    .mainwp-container {
+        height: auto; 
+        padding: 20px 0; 
+    }
+
+
+    .destination-text{
+        margin: 0;
+    }
+
+    .input-container>div>p{
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    .tour-card{
+        width: 350px;
+        height: 450px;
+    }
+
+    .tour-card-info{
+        width: 350px;
+    }
+
+    .popular-destionation-parts-cards{
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .spot-text{
+        margin: 100px;
+    }
+
+    .popular-destionations{
+        height: 1500px;
+    }
+
+    .best-service{
+        height: 500px;
+    }
+
+    .propertis h2{
+        font-size: 30px;
+    }
+
+    .popular-destionation-parts>img{
+        top: 600px;
+    }
+
+    .to-do-list{
+        padding: 20px;
+    }
+}
